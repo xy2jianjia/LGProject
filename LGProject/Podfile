@@ -1,0 +1,27 @@
+#私有库
+
+workspace 'LGProject.xcworkspace'
+
+
+project 'objc4_818_2/objc.xcodeproj'
+project 'dyld_demo/DyldDemo.xcodeproj'
+
+
+abstract_target 'CommonPods' do
+
+    
+		target 'QLObjcTest' do
+		    project 'objc4_818_2/objc.xcodeproj'
+    end
+    
+    target 'DyldDemo' do
+
+      project 'dyld_demo/DyldDemo.xcodeproj'
+      
+    end
+   
+end
+
+
+
+
